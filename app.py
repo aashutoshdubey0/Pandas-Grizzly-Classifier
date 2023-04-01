@@ -41,7 +41,7 @@ def main():
         # Make a prediction
         prediction = predict(image)
         # Determine the sentiment from the prediction
-        if prediction > 0.5:
+        if prediction < 0.5:
             sentiment = 'Grizzly'
         else:
             sentiment = 'Pandas'
